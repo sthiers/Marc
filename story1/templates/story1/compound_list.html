@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<title></title>
+	<body>
+		<h1> Story 1 - fin </h1>
+		<table>
+		<tr>
+			<th>Formule chimique</th>
+			<th>Masse molaire monoisotopique (Da)</th>
+			<th>Nom</th>
+			<th>CAS#</th>
+		</tr>
+		{% for compound in compound_list %}
+		<tr>
+			<td>{{compound.formula}}</td>
+			<td>{{compound.mw}}</td>
+			<td>{{compound.name}}</td>
+			<td>{{compound.cas}}</td>
+		</tr>
+		{% endfor %}
+			
+		</table>
+	</body>
+</html>

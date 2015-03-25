@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<title></title>
+	<body>
+		<h1> Story 1 - début </h1>
+		<form action="/story1/display-library/" method="post">
+			{% csrf_token %}
+			<input type="submit" value="Charger la librairie de composés" />
+		</form>
+	</body>
+</html>
